@@ -29,9 +29,9 @@ class PostsController < ApplicationController
 
 	private
 
-	# def post_params
-	# 	params.require(:Post).permit(:title, :description)
-	# end
+	def post_params
+		params.require(:Post).permit(:title, :description)
+	end
 	# strong params can be def as the above, passing in the arguments, or =>
 	# We pass the permitted fields in as *args;
 	# this keeps `post_params` pretty dry while
